@@ -1,0 +1,137 @@
+SEGURADORA:
+  Amil:
+    PORTE:
+      até 29 vidas:
+        documentos da empresa:
+          GERAL:
+            - "Cartão de CNPJ atualizado"
+            - "Cópia do RG e CPF ou CNH do responsável pela empresa"
+            - "Contrato Social devidamente registrado na Junta Comercial (Se for MEI, enviar o CCMEI)"
+          POSSUI_COLIGADAS_NO_PLANO:
+            - "Contrato Social de coligada (subestipulante/filial), se houver adesão no plano"
+          SOCIOS: []
+        documentos dos beneficiários:
+          GERAL:
+            - "E-mail e Celular de todos os titulares"
+            - "Cópia do Comprovante de endereço dos titulares"
+            - "Cópia do RG e CPF ou CNH de titulares e dependentes"
+            - "Para cônjuge: Certidão de casamento"
+            - "Para companheiro: União estável ou carta de convívio marital (modelo da carta anexo)"
+            - "Para filhos: RG ou certidão de nascimento"
+            - "Para netos: Certidão de nascimento"
+            - "Carta de Permanência"
+            - "Cópia da carteirinha do plano atual dos titulares e dependentes"
+          FUNCIONARIOS:
+            - "E-social"
+            - "Para admissões anteriores a 30 dias, enviar E-SOCIAL e CTPS"
+          AFASTADOS:
+            - "Declaração de afastamento INSS e último relatório médico"
+          ESTAGIARIOS_JOVEM_APRENDIZ:
+            - "Contrato/Declaração de estágio assinado pela empresa, estagiário e instituição de ensino"
+      acima de 29 vidas:
+        documentos da empresa:
+          GERAL:
+            - "RG/CNH e CPF do responsável pela empresa"
+            - "Contrato Social devidamente registrado na Junta Comercial"
+          POSSUI_COLIGADAS_NO_PLANO: 
+            - "Contrato social da coligada (subestipulante/filial/ prestação de serviços)"
+          SOCIOS: []
+        documentos dos beneficiários:
+          GERAL:
+            - "E-mail e Celular do representante legal pela empresa"
+            - "Layout anexo preenchido em todos os campos solicitados"
+            - "Para cônjuge: Certidão de casamento"
+            - "Para companheiro: União estável ou carta de convívio marital (modelo da carta anexo)"
+            - "Para filhos: RG ou certidão de nascimento"
+            - "Para netos: Certidão de nascimento"
+          FUNCIONARIOS:
+            - "FGTS Atualizado (Capa + Relação de Beneficiários + Comprovante de Pagamento)"
+            - "Para admissões anteriores a 30 dias, E-SOCIAL ou CTPS Digital"
+          AFASTADOS: []
+          ESTAGIARIOS_JOVEM_APRENDIZ: []
+  Porto Seguro:
+    PORTE:
+      até 29 vidas:
+        documentos da empresa:
+          GERAL:
+            - "RG/CNH e CPF do responsável pela empresa"
+            - "Contrato Social devidamente registrado na Junta Comercial (Se for MEI, enviar o CCMEI)"
+          POSSUI_COLIGADAS_NO_PLANO: []
+          SOCIOS: []
+        documentos dos beneficiários:
+          GERAL:
+            - "E-mail e Celular de todos os titulares"
+            - "Comprovante de endereço dos titulares"
+            - "RG/CNH e CPF de titulares e dependentes"
+            - "Para cônjuge: Certidão de casamento"
+            - "Para companheiro: União estável ou carta de convívio marital (modelo da carta anexo)"
+            - "Para filhos: RG ou certidão de nascimento"
+            - "Para netos: Certidão de nascimento"
+            - "Carta de Permanência dos titulares e dependentes"
+          FUNCIONARIOS:
+            - "FGTS Atualizado (Capa + Relação de Beneficiários + Comprovante de Pagamento)"
+            - "Para admissões anteriores a 30 dias, E-SOCIAL ou CTPS Digital"
+          AFASTADOS: 
+            - "Declaração de afastamento INSS e último relatório médico"
+          ESTAGIARIOS_JOVEM_APRENDIZ: 
+            - "Contrato/Declaração de estágio assinado pela empresa, estagiário e instituição de ensino"
+      acima de 29 vidas:
+          documentos da empresa:
+            GERAL:
+              - "RG/CNH e CPF do responsável pela empresa"
+              - "Contrato Social devidamente registrado na Junta Comercial"
+            POSSUI_COLIGADAS_NO_PLANO: []
+            SOCIOS: []
+          documentos dos beneficiários:
+            GERAL:
+              - "E-mail e Celular do representante legal pela empresa"
+              - "Layout anexo preenchido em todos os campos solicitados"
+            FUNCIONARIOS:
+              - "FGTS Atualizado (Capa + Relação de Beneficiários + Comprovante de Pagamento)"
+              - "Para admissões anteriores a 30 dias, E-SOCIAL ou CTPS Digital"
+            AFASTADOS: []
+            ESTAGIARIOS_JOVEM_APRENDIZ: []
+  Sulamérica:
+    PORTE:
+      até 29 vidas:
+        documentos da empresa:
+          GERAL:
+            - "Cópia do RG e CPF ou CNH do responsável pela empresa"
+            - "Contrato Social devidamente registrado na Junta Comercial (Se for MEI, enviar o CCMEI)"
+          POSSUI_COLIGADAS_NO_PLANO: []
+          SOCIOS:
+            - "Caso entre apenas 1 sócio no plano ou empresa com menos de 6 meses: Conta de consumo: água, luz ou telefone do endereço CNPJ (em nome sócio, cônjuge, pai/mãe)"
+        documentos dos beneficiários:
+          GERAL:
+            - "E-mail e Celular de todos os titulares"
+            - "Cópia do Comprovante de endereço dos titulares"
+            - "Cópia do RG e CPF ou CNH de titulares e dependentes"
+            - "Para cônjuge: Certidão de casamento"
+            - "Para companheiro: União estável ou carta de convívio marital (modelo da carta anexo)"
+            - "Para filhos: RG ou certidão de nascimento"
+            - "Para netos: Certidão de nascimento"
+            - "Carta de Permanência"
+            - "Cópia da carteirinha do plano atual dos titulares e dependentes"
+          FUNCIONARIOS:
+            - "FGTS Atualizado (Capa + Relação de Beneficiários + Comprovante de Pagamento)"
+            - "Para admissões anteriores a 30 dias, E-SOCIAL ou CTPS Digital"
+          AFASTADOS: 
+            - "Declaração de afastamento INSS e último relatório médico"
+          ESTAGIARIOS_JOVEM_APRENDIZ:
+            - "Contrato/Declaração de estágio assinado pela empresa, estagiário e instituição de ensino"
+      acima de 29 vidas:
+        documentos da empresa:
+          GERAL:
+            - "RG/CNH e CPF do responsável pela empresa"
+            - "Contrato Social devidamente registrado na Junta Comercial"
+          POSSUI_COLIGADAS_NO_PLANO: []
+          SOCIOS: []
+        documentos dos beneficiários:
+          GERAL:
+            - "E-mail e Celular do representante legal pela empresa"
+            - "Layout anexo preenchido em todos os campos solicitados"
+          FUNCIONARIOS:
+            - "FGTS Atualizado (Capa + Relação de Beneficiários + Comprovante de Pagamento)"
+            - "Para admissões anteriores a 30 dias, E-SOCIAL ou CTPS Digital"
+          AFASTADOS: []
+          ESTAGIARIOS_JOVEM_APRENDIZ: []
