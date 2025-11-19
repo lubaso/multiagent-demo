@@ -27,7 +27,7 @@ DOCUMENTOS:
 - "Para companheiro: União estável ou carta de convívio marital (modelo da carta anexo)"
 - "Para filhos: RG ou certidão de nascimento"
 - "Para netos: Certidão de nascimento"
-- "FGTS Atualizado (Capa + Relação de Beneficiários + Comprovante de Pagamento)"
+- "E-social"
 - "Para admissões anteriores a 30 dias, E-SOCIAL ou CTPS Digital"
 
 ID PROPOSTA: PP-033718
