@@ -1,0 +1,65 @@
+## Agente Checklist 
+
+
+### Objetivo
+
+Responsável por preparar a **lista inicial de documentos** que serão solicitados ao cliente com base nos campos da **proposta** e **kit de documentos** das operadoras
+
+* **Etapa 1 – Determinística:** Chamar agente (ou função python) para gerar a lista inicial de documentos com base **APENAS** nos campos da proposta.
+* **Etapa 2 – Revisão:** Chamar agente para ler o comentário do consultor e revisar a lista inicial de documentos.
+
+## Etapa 1 – Determinística
+
+**Objetivo**:
+Com base nos campos do payload, gerar a lista inicial de documentos que serão solicitados ao cliente
+
+**Inputs**:
+
+* `prosta` (JSON): As informações da proposta    
+* `kit_documentos` (str): O kit completo de todos os documentos necessários por operadora e porte.
+
+**Output**:
+
+* A lista inicial de documentos necessários para aquela proposta
+
+### Proposta 
+## Proposta 
+import json 
+
+with open("payload_sintetico_demo.json", "r") as f:
+    data =json.load(f)
+    
+#print(json.dumps(data, indent=4, ensure_ascii=False))
+
+### Kit de Documentos
+## Kit de Documentos 
+with open("doc_list.yaml", "r") as f:
+    yaml_text = f.read()
+    
+#print(yaml_text)
+
+### Tarefas
+* Lê a proposta e o kit de documentos.
+* Identifica operadora, porte e campos condicionais (sócios, funcionários, dependentes etc.).
+* Inclui sempre os documentos gerais (default)
+* Adiciona documentos condicionais só quando os campos condicionais forem verdadeiras.
+* Remove duplicatas e mantém a ordem original.
+* Retorna um JSON final com o ID da proposta e a lista de documentos a solicitar.
+
+## mostrar prompt por curiosidade 
+## chamar agente_checklist.py
+## chamar função python
+
+## Etapa 2 – Revisão
+
+**Objetivo**:
+Com base nos campos do payload, gerar a lista inicial de documentos que serão solicitados ao cliente
+
+**Inputs**:
+
+* `prosta` (JSON): As informações da proposta    
+* `kit_documentos` (str): O kit completo de todos os documentos necessários por operadora e porte.
+
+**Output**:
+
+* A lista inicial de documentos necessários para aquela proposta
