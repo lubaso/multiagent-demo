@@ -1,0 +1,19 @@
+df_vidas = pd.DataFrame(vidas)
+df_vinculos = pd.DataFrame(vinculos)
+
+# get `nome` and `parentescoTitular` from payload['listaVidas']
+df_payload_vidas = pd.DataFrame(payload['listaVidas'])[['nome', 'parentescoTitular']]
+
+# Ajusta o CPF/CNPJ das vidas
+df_vidas['cpf_cnpj'] = df_vidas['cpf_cnpj'].replace('nao_identificado', np.nan)
+df_vidas['cpf_cnpj'] = pd.to_numeric(df_vidas['cpf_cnpj'], errors='coerce')
+
+# Realizar o merge
+df_tot = pd.merge(df_vidas, df_vinculos, how='left', on='nome')
+df_tot = df_tot[['nome', 'tipo','tipo_beneficio', 'tipo_vinculo', 'documentos_disp']]
+
+# merge dt_tot with df_payload_vidas to get 'parentescoTitular'
+df_tot = pd.merge(df_tot, df_payload_vidas, how='left', on='nome')
+
+# rename parentescoTitular to grau_parentesco
+df_tot = df_tot.rename(columns={'parentescoTitular': 'grau_parentesco'})
